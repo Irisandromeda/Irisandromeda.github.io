@@ -50,10 +50,21 @@ header .wrap {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   font-weight: 700;
   font-size: 17px;
   color: var(--text);
   text-decoration: none;
+}
+
+.brand-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 22%;
+  box-shadow: 0 0 0 1px var(--line), 0 2px 6px rgba(0, 0, 0, 0.16);
+  display: block;
 }
 
 nav { display: flex; gap: 20px; }
@@ -98,6 +109,36 @@ a { color: var(--accent); }
 }
 
 .card p:last-child { margin-bottom: 0; }
+
+.app-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.app-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 22%;
+  box-shadow: 0 0 0 1px var(--line), 0 3px 10px rgba(0, 0, 0, 0.18);
+  flex-shrink: 0;
+  display: block;
+}
+
+.app-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.app-name a { color: var(--text); text-decoration: none; }
+
+.app-tagline {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
 
 footer {
   border-top: 1px solid var(--line);
