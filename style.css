@@ -77,6 +77,22 @@ nav a {
 
 nav a:hover, nav a[aria-current="page"] { color: var(--text); }
 
+.lang {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 13px;
+}
+
+.lang a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.lang a:hover, .lang a[aria-current="true"] { color: var(--text); }
+
+.lang a[aria-current="true"] { font-weight: 600; }
+
 main { padding: 40px 0 56px; }
 
 h1 {
